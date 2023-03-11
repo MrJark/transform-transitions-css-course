@@ -50,13 +50,23 @@
             transform: skew(20deg);
             /* Existe tb las propiedades scale solo en una de las dimensiones, X o Y de manera individual */
         }
-        .square2 {
+        .rectangle {
+            border-radius: 8px;
             width: 200px;
             height: 100px;
             background: lightcoral;
         }
-        .square2:hover {
+        .rectangle:hover {
             transform: rotate(20deg);
+        }
+        .rectangle2 {
+            background: darkmagenta;
+            width: 200px;
+            height: 100px;
+            border-radius: 8px;
+        }
+        .rectangle2:hover {
+            transform-origin: -100% 50%;
         }
     </style>
 </head>
@@ -70,6 +80,8 @@
     <h2>Third Practice. Skew</h2>
     <div class="square"></div>
     <h2>Fourth Practice. Matrix</h2>
-    <div class="square2"></div>
+    <div class="rectangle"></div>
+    <h2>Fifth Practice. transform Origin</h2>
+    <div class="rectangle2"></div>
 </body>
 </html>
