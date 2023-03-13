@@ -3,3 +3,13 @@ https://static.platzi.com/media/public/uploads/transformaciones_en_2d_y_3d_d7127
 https://static.platzi.com/media/public/uploads/transiciones_2093f06d-4937-4ba1-999d-73e1b9a56cca.pdf
 
 Gradient Generator -> https://cssgradient.io
+Colors Name -> https://htmlcolorcodes.com/es/nombres-de-los-colores/
+
+UX Tips:
+
+    1. Cuando tengas una transición, el tiempo en el que la realiza cuando está en hover u otra seudoclase, debe ser menor al tiempo en el que vuelve a su posición normal.
+    No se ve de una manera tan brusca los movimientos y da una mejor sensación
+
+    2. Debes tener un tiempo de espera entre la acción que hace el usuario y el tiempo que tarda el elemento en volver a su posición inicial. Ejem: cuando estás en una categoría de ropa y al mover el mouse se te cierra y tienes que volver a la categoría
+
+    3. 
