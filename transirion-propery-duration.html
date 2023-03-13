@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+        .container {
+            background: papayawhip;
+            width: 400px;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .container:hover .box{
+            transform: scale(1.2);
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .box1 {
+            background: lightcoral;
+            transition: transform 500ms;
+        }
+        .box2 {
+            background: lightgreen;
+            transition: transform 1s;
+        }
+        .box3 {
+            background: lightskyblue;
+            transition: transform 1.5s;
+        }
+        .container2:hover .circle{
+            transform: translateX(200px);
+        }
+        .circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .one {
+            transition: transform 1s linear;
+            transition-delay: 0.5s;
+            background: Fuchsia;
+        }
+        .two {
+            transition: transform 1.5s ease-in;
+            transition-delay: 1.5s;
+            background: Orchid;
+        }
+        .three {
+            transition: transform 2s ease-out;
+            transition-delay: 2s;
+            background: Violet;
+        }
+        .four {
+            transition: transform 4s ease-in-out;
+            transition-delay: 3s;
+            background: Plum;
+        }
+        .five {
+            transition: transform 1s ease-in-out;
+            transition-delay: 4s;
+            background: Thistle;
+        }
+        .six {
+            transition: transform 6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition-delay: 5s;
+            background: Lavender;
+        }
+    </style>
+</head>
+<body>
+    <h2>Differents Durations</h2>
+    <div class="container">
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+    </div>
+    <h2>Timing and delay</h2>
+    <div class="container2">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+        <div class="circle four"></div>
+        <div class="circle five"></div>
+        <div class="circle six"></div>
+    </div>
+</body>
+</html>
