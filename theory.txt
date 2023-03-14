@@ -12,4 +12,11 @@ UX Tips:
 
     2. Debes tener un tiempo de espera entre la acción que hace el usuario y el tiempo que tarda el elemento en volver a su posición inicial. Ejem: cuando estás en una categoría de ropa y al mover el mouse se te cierra y tienes que volver a la categoría
 
-    3. 
+    3. Debes tener cuidado caundo hayan parpadeos en el navegador al hacer ciertas funciones, si los notas o sabes que van a pasar, soluciónalos antes de hacer la update. Que no puedas verlos una segunda vez, no significa que los usuarios no los vayan a ver
+
+Porpiedades no recomendadas para las animaciones 
+
+    - Height
+    - Brackground-color 
+    - Transform y Opacity
+    
