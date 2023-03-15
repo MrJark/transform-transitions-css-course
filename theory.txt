@@ -1,22 +1,25 @@
-https://static.platzi.com/media/public/uploads/animaciones_5bda2325-fb2e-4060-9751-5863d226fcf1.pdf
-https://static.platzi.com/media/public/uploads/transformaciones_en_2d_y_3d_d712736c-5368-4c9b-8827-331dc347d536.pdf
-https://static.platzi.com/media/public/uploads/transiciones_2093f06d-4937-4ba1-999d-73e1b9a56cca.pdf
+Transform and transition course
 
-Gradient Generator -> https://cssgradient.io
-Colors Name -> https://htmlcolorcodes.com/es/nombres-de-los-colores/
+    https://static.platzi.com/media/public/uploads/animaciones_5bda2325-fb2e-4060-9751-5863d226fcf1.pdf
+    https://static.platzi.com/media/public/uploads/transformaciones_en_2d_y_3d_d712736c-5368-4c9b-8827-331dc347d536.pdf
+    https://static.platzi.com/media/public/uploads/transiciones_2093f06d-4937-4ba1-999d-73e1b9a56cca.pdf
 
-UX Tips:
+    Gradient Generator -> https://cssgradient.io
+    Colors Name -> https://htmlcolorcodes.com/es/nombres-de-los-colores/
 
-    1. Cuando tengas una transición, el tiempo en el que la realiza cuando está en hover u otra seudoclase, debe ser menor al tiempo en el que vuelve a su posición normal.
-    No se ve de una manera tan brusca los movimientos y da una mejor sensación
+    UX Tips:
 
-    2. Debes tener un tiempo de espera entre la acción que hace el usuario y el tiempo que tarda el elemento en volver a su posición inicial. Ejem: cuando estás en una categoría de ropa y al mover el mouse se te cierra y tienes que volver a la categoría
+        1. Cuando tengas una transición, el tiempo en el que la realiza cuando está en hover u otra seudoclase, debe ser menor al tiempo en el que vuelve a su posición normal.
+        No se ve de una manera tan brusca los movimientos y da una mejor sensación
 
-    3. Debes tener cuidado caundo hayan parpadeos en el navegador al hacer ciertas funciones, si los notas o sabes que van a pasar, soluciónalos antes de hacer la update. Que no puedas verlos una segunda vez, no significa que los usuarios no los vayan a ver
+        2. Debes tener un tiempo de espera entre la acción que hace el usuario y el tiempo que tarda el elemento en volver a su posición inicial. Ejem: cuando estás en una categoría de ropa y al mover el mouse se te cierra y tienes que volver a la categoría
 
-Porpiedades no recomendadas para las animaciones 
+        3. Debes tener cuidado caundo hayan parpadeos en el navegador al hacer ciertas funciones, si los notas o sabes que van a pasar, soluciónalos antes de hacer la update. Que no puedas verlos una segunda vez, no significa que los usuarios no los vayan a ver
 
-    - Height
-    - Brackground-color 
-    - Transform y Opacity
-    
+    Porpiedades no recomendadas para las animaciones 
+
+        - Height
+        - Brackground-color 
+        - Transform y Opacity
+
+Animation CSS Course
