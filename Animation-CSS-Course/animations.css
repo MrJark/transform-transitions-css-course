@@ -52,22 +52,69 @@ input:checked {
 }
 .layer-4 {
     z-index: 3;
+    height: 320px;
+    width: 80px;
+    background: rgb(238, 238, 238);
+    bottom: 0;
+    left: 26px;
 }
 .layer-5 {
     z-index: 4;
+    height: 275px;
+    width: 170px;
+    background: rgb(95, 87, 68);
+    bottom: 0;
+    left: 0;
 }
 .layer-6 {
     z-index: 5;
+    width: 80px;
+    height: 265px;
+    background: white;
+    bottom: 0;
+    right: 20px;
 }
 .layer-7 {
     z-index: 6;
+    width: 140px;
+    height: 225px;
+    bottom: 0;
+    right: 0;
+    background: brown;
 }
 .layer-8 {
     z-index: 7;
+    width: 80px;
+    height: 165px;
+    background: white;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
 }
 .layer-9 {
     z-index: 8;
+    width: 150px;
+    height: 125px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background: rgb(132, 99, 46);
 }
 .layer-10 {
-    z-index: 8;
+    z-index: 9;
+    width: 105px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    background: green;
+}
+.layer-11 {
+    z-index: 9;
+    width: 100px;
+    height: 105px;
+    bottom: 0;
+    left: 0;
+    background: green;
 }
