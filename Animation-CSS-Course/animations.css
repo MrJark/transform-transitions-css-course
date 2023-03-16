@@ -26,7 +26,7 @@ input:checked {
 }
 .layer-1 {
     z-index: 1;
-    height: 450px;
+    height: 460px;
     width: 80px;
     background: rgb(238, 238, 238);
     bottom: 0;
@@ -34,7 +34,7 @@ input:checked {
 }
 .layer-2 {
     z-index: 1;
-    height: 450px;
+    height: 460px;
     width: 80px;
     background: rgb(238, 238, 238);
     bottom: 0;
@@ -52,9 +52,9 @@ input:checked {
 }
 .layer-4 {
     z-index: 3;
-    height: 320px;
+    height: 335px;
     width: 80px;
-    background: rgb(238, 238, 238);
+    background: rgb(200, 200, 200);
     bottom: 0;
     left: 26px;
 }
@@ -69,8 +69,8 @@ input:checked {
 .layer-6 {
     z-index: 5;
     width: 80px;
-    height: 265px;
-    background: white;
+    height: 285px;
+    background: rgb(206, 206, 206);
     bottom: 0;
     right: 20px;
 }
@@ -85,8 +85,8 @@ input:checked {
 .layer-8 {
     z-index: 7;
     width: 80px;
-    height: 165px;
-    background: white;
+    height: 185px;
+    background: rgb(167, 167, 167);
     bottom: 0;
     right: 0;
     left: 0;
@@ -104,7 +104,7 @@ input:checked {
 }
 .layer-10 {
     z-index: 9;
-    width: 105px;
+    width: 115px;
     height: 100px;
     bottom: 0;
     right: 0;
@@ -112,9 +112,73 @@ input:checked {
 }
 .layer-11 {
     z-index: 9;
-    width: 100px;
+    width: 110px;
     height: 105px;
     bottom: 0;
     left: 0;
     background: green;
+}
+/* Styles for rabbits */
+/* Left Ear */
+.left-ear--outer {
+    width: 20px;
+    height: 50px;
+    border-radius: 90%;
+    background: white;
+    position: absolute; /*este funciona como absolute porque el padre, que sería el rectángulo de abajo, lo toma como el relative aunque tenga el position:abosolute*/
+    left: 10px; /*para poder colocar esta propiedad, y las demás top, right y bottom, necesita tener este mismo elemento el position:absolute*/
+}
+.left-ear--inner {
+    width: 10px;
+    height: 45px;
+    border-radius: 90%;
+    background: pink;
+    position: absolute; 
+    left: 15px; 
+    top: 8px;
+}
+/* Right Ear */
+.right-ear--outer {
+    width: 20px;
+    height: 50px;
+    border-radius: 90%;
+    background: white;
+    position: absolute; 
+    right: 10px; 
+}
+.right-ear--inner {
+    width: 10px;
+    height: 45px;
+    border-radius: 90%;
+    background: pink;
+    position: absolute; 
+    right: 15px; 
+    top: 8px;
+}
+/* Head */
+.head {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: white;
+    top: 35px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+/* Eyes */
+.head__eye {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: black;
+    position: absolute;
+    top: 18px;
+}
+.head__eye--left{
+    left: 22px;
+}
+.head__eye--right{
+    right: 22px;
 }
