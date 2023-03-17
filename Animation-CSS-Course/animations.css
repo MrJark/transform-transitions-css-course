@@ -24,11 +24,60 @@ input:checked {
 .posit {
     position: absolute;
 }
+/* Sun */
+.sun {
+    width: 70px;
+    height: 70px;
+    background: yellow;
+    top: 8px;
+    left: 8px;
+    border-radius: 100%;
+    
+}
+.sun__eye__left{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: rgb(53, 50, 50);
+    position: absolute;
+    top: 22px;
+    right: 45px; 
+}
+.sun__eye__right{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: rgb(53, 50, 50);
+    position: absolute;
+    top: 22px;
+    right: 15px; 
+}
+.sun__mouth {
+    /* position: absolute;
+    width: 50px;
+    height: 3px;
+    background: rgb(53, 50, 50) ;
+    border-radius: 60px;
+    top: 48px;
+    left: 10px; */
+    /* Este contenido lo he cogido de:  https://www.emezeta.com/articulos/tutorial-css-como-crear-un-objeto-que-baile*/
+    content:" ";
+    width:40px;
+    height:20px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    background:rgb(53, 50, 50);
+    /* Colocación */
+    position:absolute;
+    top:41px;
+    left: 15px;
+}
+/* Rabbits and ground */
 .layer-1 {
     z-index: 1;
     height: 460px;
     width: 80px;
-    background: rgb(238, 238, 238);
+    /* background: rgb(238, 238, 238); */
     bottom: 0;
     left: 60px;
 }
@@ -36,7 +85,7 @@ input:checked {
     z-index: 1;
     height: 460px;
     width: 80px;
-    background: rgb(238, 238, 238);
+    /* background: rgb(238, 238, 238); */
     bottom: 0;
     right: 60px;
 }
@@ -54,7 +103,7 @@ input:checked {
     z-index: 3;
     height: 335px;
     width: 80px;
-    background: rgb(200, 200, 200);
+    /* background: rgb(200, 200, 200); */
     bottom: 0;
     left: 26px;
 }
@@ -65,12 +114,13 @@ input:checked {
     background: rgb(95, 87, 68);
     bottom: 0;
     left: 0;
+    border-bottom-left-radius: 50px;
 }
 .layer-6 {
     z-index: 5;
     width: 80px;
     height: 285px;
-    background: rgb(206, 206, 206);
+    /* background: rgb(206, 206, 206); */
     bottom: 0;
     right: 20px;
 }
@@ -81,12 +131,13 @@ input:checked {
     bottom: 0;
     right: 0;
     background: brown;
+    border-bottom-right-radius:20px;
 }
 .layer-8 {
     z-index: 7;
     width: 80px;
     height: 185px;
-    background: rgb(167, 167, 167);
+    /* background: rgb(167, 167, 167); */
     bottom: 0;
     right: 0;
     left: 0;
@@ -109,6 +160,7 @@ input:checked {
     bottom: 0;
     right: 0;
     background: green;
+    border-bottom-right-radius:20px;
 }
 .layer-11 {
     z-index: 9;
@@ -117,9 +169,10 @@ input:checked {
     bottom: 0;
     left: 0;
     background: green;
+    border-bottom-left-radius:20px;
 }
 /* Styles for rabbits */
-/* Left Ear */
+    /* Left Ear */
 .left-ear--outer {
     width: 20px;
     height: 50px;
@@ -137,7 +190,7 @@ input:checked {
     left: 15px; 
     top: 8px;
 }
-/* Right Ear */
+    /* Right Ear */
 .right-ear--outer {
     width: 20px;
     height: 50px;
@@ -155,7 +208,7 @@ input:checked {
     right: 15px; 
     top: 8px;
 }
-/* Head */
+    /* Head */
 .head {
     position: absolute;
     width: 80px;
@@ -167,7 +220,7 @@ input:checked {
     right: 0;
     margin: 0 auto;
 }
-/* Eyes */
+    /* Eyes */
 .head__eye {
     width: 6px;
     height: 6px;
