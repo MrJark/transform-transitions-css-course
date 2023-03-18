@@ -12,6 +12,7 @@ input:checked {
 .total-count::after { 
     content: counter(game); /* Content: Inserta el contenido generado y es necesario que sea añadido como un pseudoelemente. Counter(): Función que agrega el valor de un contador a un elemento.*/
 }
+/* Phone */
 .phone {
     position: relative;
     border: 8px solid black;
@@ -78,6 +79,7 @@ input:checked {
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+
 /* código para ejecutar las animaciones.
 puedes poner el % del tiempo que le has puesto para que haga la animación
 0% -> momento inicial de la animación
@@ -97,7 +99,7 @@ puedes poner el % del tiempo que le has puesto para que haga la animación
         height: 8px;
     }
 }
-/* Rabbits and ground */
+/* Rabbits*/
 .layer-1 {
     z-index: 1;
     height: 460px;
@@ -105,7 +107,35 @@ puedes poner el % del tiempo que le has puesto para que haga la animación
     /* background: rgb(238, 238, 238); */
     bottom: 0;
     left: 60px;
+    /* Animaciones */
+    animation-name: rabbit-1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
+    /* Animation rabbit-1 */
+    @keyframes rabbit-1 {
+        0%{
+            bottom: 0;
+        }
+        25% {
+            bottom: -80px;
+        }
+        100%{
+            bottom: 0;
+        }
+    }
+    .layer1 input[type=checkbox]{
+        appearance: none;
+        opacity: 0;
+        cursor: pointer;
+        height: 50px;
+        margin: 0;
+        position: relative;
+        top: 0;
+        width: 80px;
+    }
+
 .layer-2 {
     z-index: 1;
     height: 460px;
@@ -114,6 +144,99 @@ puedes poner el % del tiempo que le has puesto para que haga la animación
     bottom: 0;
     right: 60px;
 }
+.layer-4 {
+    z-index: 3;
+    height: 335px;
+    width: 80px;
+    /* background: rgb(200, 200, 200); */
+    bottom: 0;
+    left: 26px;
+}
+.layer-6 {
+    z-index: 5;
+    width: 80px;
+    height: 285px;
+    /* background: rgb(206, 206, 206); */
+    bottom: 0;
+    right: 20px;
+}
+.layer-8 {
+    z-index: 7;
+    width: 80px;
+    height: 185px;
+    /* background: rgb(167, 167, 167); */
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+/* Styles for rabbits */
+    /* Left Ear */
+    .left-ear--outer {
+        width: 20px;
+        height: 50px;
+        border-radius: 90%;
+        background: white;
+        position: absolute; /*este funciona como absolute porque el padre, que sería el rectángulo de abajo, lo toma como el relative aunque tenga el position:abosolute*/
+        left: 10px; /*para poder colocar esta propiedad, y las demás top, right y bottom, necesita tener este mismo elemento el position:absolute*/
+    }
+    .left-ear--inner {
+        width: 10px;
+        height: 45px;
+        border-radius: 90%;
+        background: pink;
+        position: absolute; 
+        left: 15px; 
+        top: 8px;
+    }
+        /* Right Ear */
+    .right-ear--outer {
+        width: 20px;
+        height: 50px;
+        border-radius: 90%;
+        background: white;
+        position: absolute; 
+        right: 10px; 
+    }
+    .right-ear--inner {
+        width: 10px;
+        height: 45px;
+        border-radius: 90%;
+        background: pink;
+        position: absolute; 
+        right: 15px; 
+        top: 8px;
+    }
+    
+        /* Head */
+    .head {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        background: white;
+        top: 35px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    
+        /* Eyes */
+    .head__eye {
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background: black;
+        position: absolute;
+        top: 18px;
+    }
+    .head__eye--left{
+        left: 22px;
+    }
+    .head__eye--right{
+        right: 22px;
+    }
+/* Ground */
 .layer-3 {
     z-index: 2;
     bottom: 0;
@@ -127,14 +250,6 @@ puedes poner el % del tiempo que le has puesto para que haga la animación
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 2px 0px 5px rgb(23, 23, 23);
 }
-.layer-4 {
-    z-index: 3;
-    height: 335px;
-    width: 80px;
-    /* background: rgb(200, 200, 200); */
-    bottom: 0;
-    left: 26px;
-}
 .layer-5 {
     z-index: 4;
     height: 275px;
@@ -146,14 +261,6 @@ puedes poner el % del tiempo que le has puesto para que haga la animación
     border-radius: 20px;
     box-shadow: 2px 0px 5px rgb(23, 23, 23);
 }
-.layer-6 {
-    z-index: 5;
-    width: 80px;
-    height: 285px;
-    /* background: rgb(206, 206, 206); */
-    bottom: 0;
-    right: 20px;
-}
 .layer-7 {
     z-index: 6;
     width: 140px;
@@ -164,16 +271,6 @@ puedes poner el % del tiempo que le has puesto para que haga la animación
     border-bottom-right-radius:20px;
     border-radius: 20px;
     box-shadow: -1px 0px 5px rgb(23, 23, 23);
-}
-.layer-8 {
-    z-index: 7;
-    width: 80px;
-    height: 185px;
-    /* background: rgb(167, 167, 167); */
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
 }
 .layer-9 {
     z-index: 8;
@@ -205,7 +302,7 @@ puedes poner el % del tiempo que le has puesto para que haga la animación
     background: green;
     border-bottom-left-radius:20px;
 }
-/* Grass */
+    /* Grass */
 .greenGrass::after {
     content: "";
     width: 100%;
@@ -234,67 +331,4 @@ puedes poner el % del tiempo que le has puesto para que haga la animación
     background-size: 30px 100px;
     border-radius: 120px 0 0 0px 0;
 }
-/* Styles for rabbits */
-    /* Left Ear */
-.left-ear--outer {
-    width: 20px;
-    height: 50px;
-    border-radius: 90%;
-    background: white;
-    position: absolute; /*este funciona como absolute porque el padre, que sería el rectángulo de abajo, lo toma como el relative aunque tenga el position:abosolute*/
-    left: 10px; /*para poder colocar esta propiedad, y las demás top, right y bottom, necesita tener este mismo elemento el position:absolute*/
-}
-.left-ear--inner {
-    width: 10px;
-    height: 45px;
-    border-radius: 90%;
-    background: pink;
-    position: absolute; 
-    left: 15px; 
-    top: 8px;
-}
-    /* Right Ear */
-.right-ear--outer {
-    width: 20px;
-    height: 50px;
-    border-radius: 90%;
-    background: white;
-    position: absolute; 
-    right: 10px; 
-}
-.right-ear--inner {
-    width: 10px;
-    height: 45px;
-    border-radius: 90%;
-    background: pink;
-    position: absolute; 
-    right: 15px; 
-    top: 8px;
-}
-    /* Head */
-.head {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    background: white;
-    top: 35px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
-    /* Eyes */
-.head__eye {
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
-    background: black;
-    position: absolute;
-    top: 18px;
-}
-.head__eye--left{
-    left: 22px;
-}
-.head__eye--right{
-    right: 22px;
-}
+
