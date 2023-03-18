@@ -98,6 +98,9 @@ input:checked {
     width: 220px;
     height: 400px;
     background: rgb(93, 66, 3);
+    border-radius: 20px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 0px 5px rgb(23, 23, 23);
 }
 .layer-4 {
     z-index: 3;
@@ -111,10 +114,12 @@ input:checked {
     z-index: 4;
     height: 275px;
     width: 170px;
-    background: rgb(95, 87, 68);
+    background: rgb(93, 66, 3);
     bottom: 0;
     left: 0;
     border-bottom-left-radius: 50px;
+    border-radius: 20px;
+    box-shadow: 2px 0px 5px rgb(23, 23, 23);
 }
 .layer-6 {
     z-index: 5;
@@ -130,8 +135,10 @@ input:checked {
     height: 225px;
     bottom: 0;
     right: 0;
-    background: brown;
+    background: rgb(93, 66, 3);
     border-bottom-right-radius:20px;
+    border-radius: 20px;
+    box-shadow: -1px 0px 5px rgb(23, 23, 23);
 }
 .layer-8 {
     z-index: 7;
@@ -151,12 +158,14 @@ input:checked {
     right: 0;
     left: 0;
     margin: 0 auto;
-    background: rgb(132, 99, 46);
+    background: rgb(93, 66, 3);
+    border-radius: 20px;
+    box-shadow: 1px 0px 5px rgb(23, 23, 23);
 }
 .layer-10 {
     z-index: 9;
-    width: 115px;
-    height: 100px;
+    width: 95px;
+    height: 90px;
     bottom: 0;
     right: 0;
     background: green;
@@ -164,12 +173,41 @@ input:checked {
 }
 .layer-11 {
     z-index: 9;
-    width: 110px;
-    height: 105px;
+    width: 85px;
+    height: 90px;
     bottom: 0;
     left: 0;
     background: green;
     border-bottom-left-radius:20px;
+}
+/* Grass */
+.greenGrass::after {
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    background: 
+        linear-gradient(135deg, rgb(0, 128, 17) 25%, transparent 25%) -50px 0,
+        linear-gradient(-135deg, rgb(0, 128, 17) 25%, transparent 25%) -50px 0,
+        linear-gradient(45deg, rgb(0, 128, 17) 25%, transparent 25%),
+        linear-gradient(-45deg, rgb(0, 128, 17) 25%, transparent 25%);
+    background-size: 30px 70px;
+    border-radius: 20px;
+}
+.greenGrass::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 40px;
+    background: 
+        linear-gradient(135deg, rgb(128, 73, 0)  25%, transparent 25%) -50px 0,
+        linear-gradient(-135deg, rgb(128, 73, 0)  25%, transparent 25%) -50px 0,
+        linear-gradient(45deg, rgb(128, 73, 0)  25%, transparent 25%),
+        linear-gradient(-45deg, rgb(128, 73, 0)  25%, transparent 25%);
+    background-size: 30px 100px;
+    border-radius: 120px 0 0 0px 0;
 }
 /* Styles for rabbits */
     /* Left Ear */
