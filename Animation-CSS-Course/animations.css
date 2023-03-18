@@ -41,7 +41,7 @@ input:checked {
     background: rgb(53, 50, 50);
     position: absolute;
     top: 22px;
-    right: 45px; 
+    right: 45px;
 }
 .sun__eye__right{
     width: 8px;
@@ -71,6 +71,31 @@ input:checked {
     position:absolute;
     top:41px;
     left: 15px;
+}
+.sun__eye {
+    /* Creación de las animaciones */
+    animation-name: blink; 
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+/* código para ejecutar las animaciones.
+puedes poner el % del tiempo que le has puesto para que haga la animación
+0% -> momento inicial de la animación
+5% -> al 5% de los 2s que le has puesto que dure la animación, tiene que hacer x
+10% -> del tiempo, puedes poner que haga y o en este caso, que vuelva al estado original
+11% al 100% -> en este tiempo, hasta completar los 2s, se mantendrá en el estado default  */
+@keyframes blink {
+    0% { 
+        height: 8px;
+    }
+    5% {
+        transform: translate(0px, 4px);
+        height: 2px;
+    }
+    10% {
+        transform: translate(0px, 0px);
+        height: 8px;
+    }
 }
 /* Rabbits and ground */
 .layer-1 {
