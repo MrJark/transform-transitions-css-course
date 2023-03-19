@@ -2,16 +2,12 @@
 body {
     margin: 0;
     height: 100vh;
+    width: 100%;
     display: grid;
     place-items: center;
-    counter-reset: game;  /*  //crea o reinicia un contador */
+    counter-reset: score;  /*  //crea o reinicia un contador */
 }
-input:checked {
-    counter-increment: game; /*Incrementa un valor del contador.*/
-}
-.total-count::after { 
-    content: counter(game); /* Content: Inserta el contenido generado y es necesario que sea añadido como un pseudoelemente. Counter(): Función que agrega el valor de un contador a un elemento.*/
-}
+
 /* Phone */
 .phone {
     position: relative;
@@ -25,6 +21,46 @@ input:checked {
 .posit {
     position: absolute;
 }
+.title {
+    margin-top: 50px;
+    text-align: center;
+    letter-spacing: 2.2px;
+    font-size: 30px;
+    font-family: 'ZCOOL KuaiLe', cursive;    
+    opacity: 80%;
+    font-weight: 700;
+}
+.score {
+    position: absolute;
+    margin-top: 30px;
+    letter-spacing: 2.5px;
+    top: 65px;
+    left: 100px;
+}
+.score:after {
+    content: counter(score);
+}
+/* Inputs */
+input[type=checkbox] {
+    appearance: none;
+    cursor: pointer;
+    height: 50px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    width: 80px;
+    z-index: 2;
+}
+input[type=checkbox]:focus {
+    appearance: none;
+    outline: none;
+}
+input:checked {
+    counter-increment: score;
+}
+/* .score {
+    content: counter(score);
+} */
 /* Sun */
 .sun {
     width: 70px;
@@ -125,17 +161,6 @@ puedes poner el % del tiempo que le has puesto para que haga la animación
             bottom: 0;
         }
     }
-    .layer1 input[type=checkbox]{
-        appearance: none;
-        opacity: 0;
-        cursor: pointer;
-        height: 50px;
-        margin: 0;
-        position: relative;
-        top: 0;
-        width: 80px;
-    }
-
 .layer-2 {
     z-index: 1;
     height: 460px;
@@ -207,7 +232,6 @@ puedes poner el % del tiempo que le has puesto para que haga la animación
         right: 15px; 
         top: 8px;
     }
-    
         /* Head */
     .head {
         position: absolute;
@@ -220,7 +244,6 @@ puedes poner el % del tiempo que le has puesto para que haga la animación
         right: 0;
         margin: 0 auto;
     }
-    
         /* Eyes */
     .head__eye {
         width: 6px;
